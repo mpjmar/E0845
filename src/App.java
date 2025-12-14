@@ -13,12 +13,8 @@ public class App {
     }
 
     private static void pintaLinea(int ancho, int fila) {
-        for (int i = 0; i < ancho; i++) {
-            if (i < ancho / 2)
-                System.out.print(i <= fila || i >= ancho - i ? "*" : " ");
-            else
-                System.out.print(i < ancho - fila - 1 ? " " : "*");
-        }
+        for (int i = 0; i < ancho; i++)
+            System.out.print(i <= fila || i >= ancho - fila - 1 ? "*" : " ");
         System.out.println();
     }
 }
